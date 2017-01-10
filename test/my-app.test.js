@@ -1,7 +1,18 @@
 var expect = require('chai').expect;
+var request = require('superagent');
 
 describe('Sample web app', function() {
-  var baseUrl = 'http://localhost:8080';
+  var myApp = require('../lib/my-app'); // require the app file from the lib directory so we can use the exported functions.
+  var port = 8080; //give the port that the server will connect to.
+  var baseUrl = "http://localhost:" + port;
+
+  before(function(done) { //start the server before each test.
+    myApp.start(port, done);
+  });
+
+  after(function(done) { //close the server after each test.
+    myApp.stop(done);
+  });
 
   describe('when requested at /hello', function() {
     it('should say hello', function() {
