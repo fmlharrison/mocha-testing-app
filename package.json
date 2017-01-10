@@ -4,7 +4,7 @@
   "description": "TDD a simple Node app with Mocha",
   "main": "index.js",
   "scripts": {
-    "test": "mocha -R tap"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
