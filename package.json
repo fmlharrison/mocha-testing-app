@@ -1,0 +1,27 @@
+{
+  "name": "node-mocha-tdd",
+  "version": "0.0.1",
+  "description": "TDD a simple Node app with Mocha",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha -R tap"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fmlharrison/mocha-testing-app.git"
+  },
+  "author": "fmlharrison",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fmlharrison/mocha-testing-app/issues"
+  },
+  "homepage": "https://github.com/fmlharrison/mocha-testing-app#readme",
+  "dependencies": {
+    "express": "4.14.0"
+  },
+  "devDependencies": {
+    "chai": "3.5.0",
+    "mocha": "3.2.0",
+    "superagent": "3.3.1"
+  }
+}
